@@ -22,6 +22,7 @@
     margin: 0;
     padding: 0;
 }
+
 #header {
     color: white;
     width: 100%;
@@ -69,7 +70,7 @@ body {
 .container {
     background-color: white;
     height: 200px;
-    flex-grow: 1;
+    min-width: 400px;
     box-shadow: 2px 3px 2px #00000014;
     border-radius: 9px;
     margin: 10px 0;
@@ -86,7 +87,7 @@ body {
 
 }
 
-.sidenav a {
+.sidenav > a {
     color: black;
     font-size: 1.3rem;
     font-family: GraphikLight;
@@ -95,13 +96,21 @@ body {
     transition: .4s;
 }
 
-.sidenav a:hover {
+.sidenav > a:hover {
     color: #a335f3;
 }
 
-.sidenav .closebtn {
+.sidenav > .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 35px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
 }
