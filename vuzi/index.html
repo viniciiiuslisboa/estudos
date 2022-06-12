@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tentativa Vuzi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon/favicon.ico">
+    <style>
+        /*bloco de resultados*/
+        #div-row {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="header-content">
+            <img src="imgs/logo-letter-1.jpg" alt="logo">
+        </div>
+    </div>
+
+    <div id="bloco1">
+        <div class="bloco1-content">
+            <h1>Pedidos</h1>
+        </div>
+        <div class="bloco1-content">
+            <a href="">Início</a>
+            <a href="">Pedidos</a>
+        </div>
+    </div>
+
+    <div id="bloco2">
+        <div id="line-title">
+            <div id="title">
+                <h1>Meus Pedidos</h1>
+                <p>Gerencie os pedidos abaixo</p>
+            </div>
+            <input type="button" value="Filtrar" class="button">
+        </div>
+
+        <div id="container1">
+            <div class="form-line-1">
+                <div class="form-items flex-grow-1"">
+                    <label for="name">Nome:</label>
+                    <input style="background-color: #E9E9ED;" class="input-type-1" type="text" id="name">
+                </div>
+
+                <div class="form-items flex-grow-1">
+                    <label for="surname">Sobrenome:</label>
+                    <input style="background-color: #E9E9ED;" class="input-type-1" type="text" id="surname">
+                </div>
+            </div>
+
+            <div id="lines">
+                <div id="lines-child">
+                    <div class="form-items" id="div-date">
+                        <label for="date">Dia da compra:</label>
+                        <input class="input-type-2" type="date" id="date">
+                    </div>
+
+                    <div class="form-items">
+                        <label for="email">Email:</label>
+                        <input class="input-type-2" type="email" id="email">
+                    </div>
+
+                    <div class="form-items">
+                        <label for="order">Número do Pedido:</label>
+                        <input class="input-type-2" type="number" id="order">
+                    </div>
+
+                    <div class="form-items">
+                        <label for="frame-color">Cor da Moldura:</label>
+                        <select class="input-type-2" id="frame-color">
+                            <option value="null">Selecione uma Cor de Moldura</option>
+                            <option value="Preta">Preta</option>
+                            <option value="Branca">Branca</option>
+                            <option value="Tabaco">Tabaco</option>
+                        </select>
+                    </div>
+
+                    <div class="form-items">
+                        <label for="frame-type">Tipo de Moldura:</label>
+                        <select class="input-type-2" id="frame-type">
+                            <option value="null"> Selecione um Tipo de Moldura</option>
+                            <option value="Caixa">Moldura Caixa</option>
+                            <option value="Padrão">Moldura Padrão</option>
+                        </select>
+                    </div>
+
+                    <div class="form-items">
+                        <label for="Acabamento">Acabamento:</label>
+                        <select class="input-type-2" id="Acabamento">
+                            <option value="null">Selecione uma opção</option>
+                            <option value="Sem vidro">Sem vidro</option>
+                            <option value="Com Vidro">Com vidro</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div id="line-button">
+                <button onclick="buscar()" id="button-2">Buscar</button>
+            </div>
+
+        <div id="container2">
+            <div id="data-order">
+                <h3 class="teste">Dados do Pedido</h3>
+                <img src="imgs/banco-de-dados-em-nuvem.png" height="100%" alt="">
+            </div>
+            <div id="data-order-res">
+                <p">No data available in table</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

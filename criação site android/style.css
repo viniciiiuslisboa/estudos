@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Idroid;
+    src: url(fonts/idroid.otf);
+}
+
+body{
+    background-color: #ebe5c5;
+
+}
+
+header{
+    background: linear-gradient(#2DA262, #073F1F);
+    text-align: center;
+}
+
+
+header > h1{
+    font-weight: normal;
+    font-family: Bebas;
+    font-size: 48px;
+    color: white;
+    text-shadow: 3px 2px 2px #000000a1;
+    padding: 40px 0px 20px 0px;
+
+}
+
+header > p{
+    font-family: Arial;
+    font-size: 1.2rem;
+    text-shadow: 3px 2px 2px #000000a1;
+    color: white;
+    padding-bottom: 50px;
+    max-width: 600px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.nav-item{
+    text-decoration: none;
+    color: #83e1ad;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+nav{
+    padding-bottom: 10px;
+}
+
+.nav-item:hover{
+    background-color: #2FA866;
+    color: #073F1F;
+}
+
+section{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 11px #00000094;
+}
+
+section > h1, h2 {
+    font-family: idroid;
+    font-size: 28px;
+    color: #074020;
+    font-weight: normal;
+}
+
+section > p{
+    margin: 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-indent: 16px;
+    line-height: 2em;
+}
+
+#bugdroid{
+    display: block;
+    margin: auto;
+}
+
+section > h2{
+    background: linear-gradient(to right, #83E1AD, white);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#video{
+    text-align: center;
+    background-color: #063D1E;
+    margin-bottom: 25px;
+}
+
+p > a{
+    font-family: arial;
+    background-color: #83e1ad;
+    font-weight: bold;
+    padding: 3px 6px;
+    color: #063d1e;
+    text-decoration: none;
+}
+
+.links-icon::after {
+    content: '\00A0\1F517';
+}
+
+#bloco{
+    background-color: #83E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 0px 0px 10px;
+}
+
+#bloco > h3{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #074020;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#bloco > p{
+    margin: 15px
+}
+
+#bloco > ul{
+    display: block;
+    columns: 2;
+    text-indent: 16px;
+}
+
+strong{
+    color: #1a5c37;
+}
