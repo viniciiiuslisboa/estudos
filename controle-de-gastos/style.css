@@ -33,10 +33,7 @@
 }
 
 #main-container {
-    width: 55%;
     margin: 20px auto;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
 body {
@@ -44,12 +41,13 @@ body {
     font-family: GraphikRegular, Arial, sans-serif;
 }
 
-#line-container-1 {
+#line-containers-1 {
     display: flex;
+    width: 100%;
     gap: 10px;
 }
 
-#line-container-2 {
+#line-containers-2 {
     display: flex;
     gap: 10px;
 }
@@ -67,13 +65,18 @@ body {
     transition: .5s;
 }
 
-.container {
+.container-1 {
     background-color: white;
-    height: 200px;
-    min-width: 400px;
     box-shadow: 2px 3px 2px #00000014;
     border-radius: 9px;
-    margin: 10px 0;
+    height: 200px;
+}
+
+.container-2 {
+    background-color: white;
+    box-shadow: 2px 3px 2px #00000014;
+    border-radius: 9px;
+    height: 200px;
 }
 
 .bar-icon {
