@@ -32,25 +32,11 @@
     background-color: var(--primary);
 }
 
-#main-container {
-    margin: 20px auto;
-}
-
 body {
     background-color: var(--secondary);
     font-family: GraphikRegular, Arial, sans-serif;
 }
 
-#line-containers-1 {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-
-#line-containers-2 {
-    display: flex;
-    gap: 10px;
-}
 
 .sidenav {
     height: 100%;
@@ -63,20 +49,6 @@ body {
     overflow-x: hidden;
     padding-top: 60px;
     transition: .5s;
-}
-
-.container-1 {
-    background-color: white;
-    box-shadow: 2px 3px 2px #00000014;
-    border-radius: 9px;
-    height: 200px;
-}
-
-.container-2 {
-    background-color: white;
-    box-shadow: 2px 3px 2px #00000014;
-    border-radius: 9px;
-    height: 200px;
 }
 
 .bar-icon {
@@ -116,4 +88,15 @@ body {
     background-color: transparent;
     cursor: pointer;
     padding: 5px;
+}
+
+#main-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.container {
+    background-color: white;
+    flex: 1 10px;
 }
