@@ -7,14 +7,62 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form id="form-teste">
         <label for="form">Sou lindo</label>
-        <input id="form" type="text">
-        <button type="submit" onclick="clicar()">Sou lindo</button>
+        <input id="form" id="teste" name="teste" type="text" required>
+        <!--<a href="#" id="submit">Sou lindo</a>-->
+        <button type="submit" id="button">Sou lindo</button>
     </form>
 
+    <input type="text" list="sou lindo" placeholder="sou lindo">
+
+    <datalist id="sou lindo">
+        <option value="teste">tese</option>
+        <option>Sou Lindo</option>
+        <option>Sou Lindo</option>
+        <option>Sou Lindo</option>
+        <option>Sou Lindo</option>
+    </datalist>
+
+    <br>
+
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
     <script>
-        function clicar(){
+
+        console.log("Recarregou")
+
+        const $form = document.querySelector("#form-teste");
+        $form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            submit();
+        })
+
+
+        /*const submit = document.querySelector("#button");
+        submit.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            console.log(event)
+        })*/
+
+        /*const link = document.querySelector("#submit");
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            console.log(event)
+        })*/
+
+
+
+        function submit(){
             console.log("Sou lindo")
         }
     </script>
